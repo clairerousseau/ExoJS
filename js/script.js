@@ -7,7 +7,14 @@ let title = document.createTextNode("Exercice JavaScript");
 titleTag.appendChild(title);
 head.appendChild(titleTag);
 
-  // création du main
+//Header --- partie de bakary
+var header = document.createElement("header");
+document.body.appendChild(header);
+var title = document.createElement("h1");
+header.appendChild(title);
+title.innerText = "Bonjour les copain";
+
+  // création du main -- Amélie
 let main = document.createElement('main'); 
 document.body.appendChild(main); 
 
@@ -48,3 +55,4 @@ section2Header.appendChild(section2H2);
 section2.appendChild(section2P);
 
 main.appendChild(section2);
+

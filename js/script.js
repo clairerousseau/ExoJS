@@ -7,13 +7,13 @@ let title = document.createTextNode("Exercice JavaScript");
 titleTag.appendChild(title);
 head.appendChild(titleTag);
 
-// création du main
+  // création du main
 let main = document.createElement('main'); 
 document.body.appendChild(main); 
 
 // Première section --- Abdoulaye
 let section = document.createElement("section"); // crée la balise section
-document.main.appendChild(section); // rajoute la section au main
+main.appendChild(section); // rajoute la section au main
 
 let header = document.createElement("header"); // crée la balise header
 section.appendChild(header); // rajoute le header à la section
@@ -26,8 +26,8 @@ h2.appendChild(contentH2); // rajoute le contenu au h2
 
 let paragraph = document.createElement("p"); // crée un paragraphe
 let contentParagraph = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.");
-/* crée
-un contenu pour le paragraphe */
+  /* crée
+  un contenu pour le paragraphe */
 paragraph.appendChild(contentParagraph); // rajoute le contenu au paragraphe
 section.appendChild(paragraph); // rajoute le paragraphe et son contenu au bod
 
@@ -43,7 +43,8 @@ var section2P = document.createElement("p");
 var section2PText = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.");
 section2P.appendChild(section2PText);
 
-section2.appendChild(section2H2);
+section2.appendChild(section2Header);
+section2Header.appendChild(section2H2);
 section2.appendChild(section2P);
 
-document.main.appendChild(section2);
+main.appendChild(section2);

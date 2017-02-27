@@ -7,6 +7,11 @@ let title = document.createTextNode("Exercice JavaScript");
 titleTag.appendChild(title);
 head.appendChild(titleTag);
 
+// création du main
+let main = document.createElement('main'); 
+let body = document.getElementsByTagName('body')[0]; 
+body.appendChild(main); 
+
 
 // la partie de Abdoulaye
 let section = document.createElement("section"); // crée la balise section

@@ -1,4 +1,6 @@
-let head = document.getElementByTagName("head"); 
+let head = document.getElementsByTagName("head")[0]; 
+let titleTag = document.createElement("title"); 
+let title = document.createTextNode("Exercice JavaScript");
 
-head.createElement("title"); 
-
+titleTag.appendChild(title);
+head.appendChild(titleTag); 

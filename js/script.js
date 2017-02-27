@@ -1,16 +1,16 @@
 
 // Création de l'élément title
-let head = document.getElementsByTagName("head")[0]; 
-let titleTag = document.createElement("title"); 
+let head = document.getElementsByTagName("head")[0];
+let titleTag = document.createElement("title");
 let title = document.createTextNode("Exercice JavaScript");
 
 titleTag.appendChild(title);
 head.appendChild(titleTag);
 
 // création du main
-let main = document.createElement('main'); 
-let body = document.getElementsByTagName('body')[0]; 
-body.appendChild(main); 
+let main = document.createElement('main');
+let body = document.getElementsByTagName('body')[0];
+body.appendChild(main);
 
 
 // la partie de Abdoulaye
@@ -32,3 +32,10 @@ let contentParagraph = document.createTextNode("Lorem ipsum dolor sit amet, cons
 un contenu pour le paragraphe */
 paragraph.appendChild(paragraph); // rajoute le contenu au paragraphe
 document.body.appendChild(paragraph); // rajoute le paragraphe et son contenu au body
+
+//partie de bakary
+var header = document.createElement("header");
+document.body.appendChild(header);
+var title = document.createElement("h1");
+header.appendChild(title);
+title.innerText = "Bonjour les copain";

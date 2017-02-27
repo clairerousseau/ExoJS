@@ -32,3 +32,19 @@ let contentParagraph = document.createTextNode("Lorem ipsum dolor sit amet, cons
 un contenu pour le paragraphe */
 paragraph.appendChild(paragraph); // rajoute le contenu au paragraphe
 document.body.appendChild(paragraph); // rajoute le paragraphe et son contenu au body
+
+
+
+// partie de Claire
+
+let body = document.getElementsByTagName("body")[0];
+let footer = document.createElement("footer");
+
+let aside = document.createElement("aside");
+
+body.appendChild(footer);
+footer.appendChild(aside);
+
+let text = document.createTextNode("Lorem Ipsum");
+
+aside.appendChild(text);
